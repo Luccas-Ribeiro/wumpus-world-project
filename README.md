@@ -31,10 +31,10 @@ Certifique-se de ter o **Python 3.14+** instalado. Clone o repositório e instal
 
 ```bash
 # Clone o repositório
-git clone https://github.com/Luccas-Ribeiro/world-of-wumpus-project.git
+git clone https://github.com/Luccas-Ribeiro/wumpus-world-project.git
 
 # Entre na pasta do projeto
-cd world-of-wumpus-project
+cd wumpus-world-project
 
 # Crie e ative o ambiente virtual
 python -m venv .venv

@@ -1,9 +1,11 @@
-# Wumpus World
+# Wumpus World Lab
 
 **Disciplina:** Introdução à Inteligência Artificial  
 **Semestre:** 2026.2  
 **Professor:** Andre Luis Fonseca Faustino 
 **Turma:** T01
+
+---
 
 ## Integrantes do Grupo
 * Lucas Emanuel da Paz Ribeiro (20250051945)
@@ -22,6 +24,27 @@ O foco do trabalho é **comparar formas de raciocinar sob incerteza**. O mesmo m
 Tudo é configurável e executado por uma interface de terminal construída com [Textual](https://textual.textualize.io), e os resultados podem ser comparados com gráficos e estatísticas.
 
 **Tecnologias:** Python · Textual · pytest
+
+---
+
+## Funcionalidades
+
+| Área | Funcionalidade | Status |
+|------|----------------|:------:|
+| **Mundo** | Tamanho da grade configurável pela interface | [ ] |
+| | Geração aleatória ou por *seed*, com *seed* sempre exibida e reutilizável | [ ] |
+| | Quantidade de poços fixa ou proporcional ao tamanho da grade | [ ] |
+| | Presença do Wumpus e flecha para o agente | [ ] |
+| **Agentes lógicos** | Base de conhecimento com `TELL` / `ASK` | [ ] |
+| | Motores: DPLL, Resolução (CNF) e Encadeamento para frente, selecionáveis pela interface | [ ] |
+| **Agentes probabilísticos** | Motores: Enumeração e Eliminação de variáveis, selecionáveis pela interface | [ ] |
+| | Mapa de calor das probabilidades ao fim da expedição | [ ] |
+| **Interface** | Escolha do atuador (você ou um agente) | [ ] |
+| | Gráficos e estatísticas de desempenho dos agentes | [ ] |
+| **Opcionais** | Modo "mundo claro" (o usuário vê o mundo todo, o agente continua às cegas) | [ ] |
+| | Wumpus móvel | [ ] |
+
+---
 
 ## Guia de Instalação e Execução
 [Descreva os passos para instalação e execução do projeto. Inclua um passo a passo claro de como utilizar a proposta desenvolvida. Veja o exemplo abaixo.]

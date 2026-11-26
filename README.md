@@ -11,6 +11,8 @@
 * Lucas Emanuel da Paz Ribeiro (20250051945)
 * Erick Alberth da Silva Santos (20250044619)
 * Pedro Vitor de Oliveira Moura (20230036093)
+* Mateus Sousa da Silva (20220046908)
+* Thallys Augusto Torres de Souza (20240011552)
 
 ## Descrição do Projeto
 Este projeto implementa o **Mundo de Wumpus**, um clássico da IA em que um agente explora uma caverna em grade às cegas, sem saber onde estão os poços nem o Wumpus. O objetivo é pegar o ouro e voltar à saída com vida, usando apenas as percepções locais (brisa perto de poços, fedor perto do Wumpus, brilho do ouro, impacto quando a flecha atinge uma parede e grito quando o Wumpus é atingido pela flecha).
@@ -27,22 +29,27 @@ Tudo é configurável e executado por uma interface de terminal construída com 
 
 ---
 
-## Funcionalidades
+## ✨ Funcionalidades
 
 | Área | Funcionalidade | Status |
 |------|----------------|:------:|
 | **Mundo** | Tamanho da grade configurável pela interface | [ ] |
 | | Geração aleatória ou por *seed*, com *seed* sempre exibida e reutilizável | [ ] |
 | | Quantidade de poços fixa ou proporcional ao tamanho da grade | [ ] |
-| | Presença do Wumpus e flecha para o agente | [ ] |
+| | **Wumpus móvel**, que se desloca pela caverna ao longo da expedição | [ ] |
+| | **Flecha única** para o agente | [ ] |
 | **Agentes lógicos** | Base de conhecimento com `TELL` / `ASK` | [ ] |
 | | Motores: DPLL, Resolução (CNF) e Encadeamento para frente, selecionáveis pela interface | [ ] |
 | **Agentes probabilísticos** | Motores: Enumeração e Eliminação de variáveis, selecionáveis pela interface | [ ] |
-| | Mapa de calor das probabilidades ao fim da expedição | [ ] |
+| | **Heatmap em tempo real**, embutido na própria grade (apenas no modelo probabilístico) | [ ] |
 | **Interface** | Escolha do atuador (você ou um agente) | [ ] |
-| | Gráficos e estatísticas de desempenho dos agentes | [ ] |
-| **Opcionais** | Modo "mundo claro" (o usuário vê o mundo todo, o agente continua às cegas) | [ ] |
-| | Wumpus móvel | [ ] |
+| | Avanço da simulação por tecla, com percepções e ações exibidas em log lateral a cada passo | [ ] |
+| | Tela de benchmark: mesma configuração e mesmas seeds para todos os agentes | [ ] |
+| | Métricas comparáveis: vitória, pontuação (média e desvio), mortes por poço e por Wumpus, tempo por decisão | [ ] |
+| | Limite de passos e de tempo por decisão, para nenhum motor travar o benchmark | [ ] |
+| | Gráficos comparativos e histórico de benchmarks salvos | [ ] |
+| **Opcional** | Modo "mundo claro" (o usuário vê o mundo todo, o agente continua às cegas) | [ ] |
+
 
 ---
 

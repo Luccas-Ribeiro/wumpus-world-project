@@ -15,7 +15,7 @@
 * Thallys Augusto Torres de Souza (20240011552)
 
 ## Descrição do Projeto
-Este projeto implementa o **Mundo de Wumpus**, um clássico da IA em que um agente explora uma caverna em grade às cegas, sem saber onde estão os poços nem o Wumpus. O objetivo é pegar o ouro e voltar à saída com vida, usando apenas as percepções locais (brisa perto de poços, fedor perto do Wumpus, brilho do ouro, impacto quando a flecha atinge uma parede e grito quando o Wumpus é atingido pela flecha).
+Este projeto implementa o **Mundo de Wumpus**, um clássico da IA em que um agente explora uma caverna em grade às cegas, sem saber onde estão os poços nem o Wumpus. O objetivo é pegar o ouro e voltar à saída com vida, usando apenas as percepções locais (brisa perto de poços, fedor perto do Wumpus, brilho do ouro e grito quando o Wumpus é atingido pela flecha).
 
 O foco do trabalho é **comparar formas de raciocinar sob incerteza**. O mesmo mundo pode ser explorado por:
 
@@ -104,7 +104,7 @@ A interface Textual abre no terminal. Na tela de configuração você escolhe o 
   - [ ] **1.2** Gerador usando uma instância própria de `random.Random(seed)`, nunca o `random` global. Se não houver seed, sortear uma e guardá-la na config.
   - [ ] **1.3** Regras de posicionamento: início livre de poço e Wumpus, e ouro fora de poço.
   - [ ] **1.4** Garantir que o mundo seja **solucionável** (o ouro é alcançável sem passar por poço), regenerando de forma determinística se necessário.
-  - [ ] **1.5** Percepções: brisa, fedor, brilho, impacto e grito.
+  - [ ] **1.5** Percepções: brisa, fedor, brilho e grito.
   - [ ] **1.6** Ações e física: andar, girar, pegar, **atirar flecha** (uma única, acerta o primeiro Wumpus na linha de tiro) e sair.
   - [ ] **1.7** Pontuação e condições de fim de jogo (vitória, morte por poço, morte pelo Wumpus, saída sem ouro).
   - [ ] **1.8** **Wumpus móvel:** mover o Wumpus a cada *k* turnos (parâmetro de `WorldConfig`, k=1 por padrão) para uma célula vizinha livre, usando o `random.Random(seed)` do episódio, para o movimento continuar reprodutível. Reaplicar a regra de solucionabilidade (1.4) considerando que o Wumpus pode bloquear e desbloquear caminhos.
